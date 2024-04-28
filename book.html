@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profilepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Scribble</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Scribble</a>
+        <a class="nav-link" href="uniprescribed.html">Book of the Day</a>
+        <a class="nav-link" href="wishlistform.html">Request a Book</a>
+        <a href="profilepage.html" class="nav-link">My profile</a>
+        <a href="login_page.html"><button class="btn" type="submit" href="=">Login/Sign Up!</button></a>
+    </div>
+</nav>
+
+
+    <div class="container bookreview">
+      <div class="row">
+        <div class="col">
+          <img class="imagecontainer" src="richdadpoordad.jpg">
+        </div>
+        <div class="col">
+          <div class="textbook">
+            
+            <br>
+            <h3>Rich Dad Poor Dad</h3> 
+            <h6><i>By Robert T.Kiyosaki</i></h6>
+            <p>Know What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!</p>
+            
+            
+            <br>
+            
+            <a href="#"><button class ="btn" style="background-color:#B4D51E;color:white;">Go to Amazon</button></a>
+            <br>
+          
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+      <h3>Ratings and Reviews</h3>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            "Good book!"
+          </h5>
+          <p class="card-subtitle text-muted">By @username123</p>
+         
+          <br>
+          <p class="card-text">
+            Very practical book.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            "Enjoyed a Lot!!"
+          </h5>
+          <p class="card-subtitle text-muted">By @username123</p>
+          
+          <br>
+          <p class="card-text">
+            I really enjoyed this book.I can’t wait to read his other books and start to change my life!
+
+          </p>
+        </div>
+      </div>
+
+    <br>
+    <br>
+    <div class = "container">
+      <h3>Give your review here!</h3>
+      
+        Ratings: <input type="number" name="rating" id="ratings" max="5"><br><br>
+        Leave a review here, 
+        Title: <input type="text" id="title"><br> <br>
+        <textarea name="review" id="review" cols="140" rows="10" placeholder="Enter your review here">
+        </textarea><br>
+        <input type="submit" value="Submit here" onclick="savedata()">
+      
+    </div>
+
+    <br>
+    <br>
+
+ 
+    <div class="footer text-center">
+      <h3 style="color: whitesmoke;">Scribble</h3>
+      <p style="color: whitesmoke;">All CopyRight and Terms Reserved</p>
+      <img src="./facebook.png" alt="ig" srcset="">
+      <img src="./instagram.png" alt="mail" srcset="">
+    </div>
+
+  
+    
+</body>
+</html>

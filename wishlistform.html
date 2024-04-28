@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="wishlist.css">
+    <title>Book Request - Scribble</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="wishform.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Scribble</a>
+            <a class="nav-link" href="uniprescribed.html">Book of the day</a>
+            <a class="nav-link" href="wishlistform.html">Request a Book</a>
+            <a href="profilepage.html" class="nav-link">My profile</a>
+            <a href="login_page.html"><button class="btn" type="submit" href="=">Login/Sign Up!</button></a>
+        </div>
+    </nav>
+
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Book Request</h3>
+                        <p>The book you want isn't available on Scribble? Just leave a request for any book!</p>
+                        <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail Address">
+                            </div>
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" id="namebook" placeholder="Name of the Book">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="name" id="nameauthor" placeholder="Name of the Author">
+                             </div>
+
+                           
+                           <div class="col-md-12">
+                            <input class="form-control" type="text" name="isbn" id="isbn" placeholder="ISBN number">
+                         </div>
+                           <div class="col-md-12 mt-3"></div>
+                            <div class="form-button mt-3" style="text-align: center;">
+                                <button style="border-color: red;border-width: 4px;border-radius: 70px;" id="submit" type="submit" class="btn" onclick="savedata()">Request for the Book!</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="footer text-center">
+        <h3 style="color: whitesmoke;">Scribble</h3>
+        <p style="color: whitesmoke;">All CopyRight and Terms Reserved</p>
+        <img src="./facebook.png" alt="ig" srcset="">
+        <img src="./instagram.png" alt="mail" srcset="">
+    </div>
+</body>
+</html>
