@@ -1,133 +1,196 @@
+body {
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            padding-top: 90px;
-            font-family: 'Merriweather', serif;
-            box-sizing: border-box;
-            padding: 0%;
-            margin: 0%;
-        }
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-        .navbar {
-            background-color: black;
-        }
-        .navbar a:hover {
-            cursor: pointer;
-            color: red;
-        }
-        .navbar a {
-            color: whitesmoke;
-            text-decoration: none;
-        }
-        .btn {
-            background-color: black;
-        }
-        .btn:hover,
-        .btn:focus {
-            color: #fff;
-            background-color: red;
-            border-color: red;
-            border-radius: 60px;
-        }
-        .panel-login {
-            border-color: #ccc;
-            background-color: #fbf4e2;
-            border-radius: 20px;
-            margin: 90px;
-        }
-        .panel-login input {
-            border-radius: 10px;
-        }
-        
-        .panel-login>.panel-heading {
-            color: #00415d;
-            background-color: #fff;
-            border-color: #fff;
-            text-align:center;
-            background-color: #fbf4e2;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        .panel-login>.panel-heading a{
-            text-decoration: none;
-            color: #666;
-            font-weight: bold;
-            font-size: 15px;
-            -webkit-transition: all 0.1s linear;
-            -moz-transition: all 0.1s linear;
-            transition: all 0.1s linear;
-        }
-        .panel-login>.panel-heading a.active{
-            color: #463C74;
-            font-size: 18px;
-        }
-        .panel-login>.panel-heading hr{
-            margin-top: 10px;
-            margin-bottom: 0px;
-            clear: both;
-            border: 0;
-            height: 1px;
-            background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
-            background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-            background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-            background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
-        }
-        .panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
-            height: 45px;
-            border: 1px solid #ddd;
-            font-size: 16px;
-            -webkit-transition: all 0.1s linear;
-            -moz-transition: all 0.1s linear;
-            transition: all 0.1s linear;
-        }
-        .panel-login input:hover,
-        .panel-login input:focus {
-            outline:none;
-            border-color: #ccc;
-        }
-        .btn-login {
-            background-color: #b4d51e;
-            outline: none;
-            color: #fff;
-            font-size: 14px;
-            height: auto;
-            font-weight: normal;
-            padding: 14px 0;
-            text-transform: uppercase;
-            border-color: #463C74;
-            border-radius: 10px;
-        }
-        .forgot-password {
-            text-decoration: underline;
-            color: #786ea5;
-        }
-        .forgot-password:hover,
-        .forgot-password:focus {
-            text-decoration: underline;
-            color: #463C74;
-        }
+.navbar {
+    background-color: black;
+    padding: 15px 0;
+}
 
-        .btn-register {
-            background-color: #b4d51e;
-            outline: none;
-            color: #fff;
-            font-size: 14px;
-            height: auto;
-            font-weight: normal;
-            padding: 14px 0;
-            text-transform: uppercase;
-            border-color: #b4d51e;
-            border-radius: 10px;
-        }
-        .btn-register:hover,
-        .btn-register:focus {
-            color: #fff;
-            background-color: #463C74;
-            border-color: #463C74;
-        }
-        .footer{
-            background-color: black;
-            padding: 20px;
-        }
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+
+.btn {
+    background-color: black;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+    border-radius: 60px;
+}
+
+/* Login/Register panel styles */
+.panel-login {
+    border-color: #ccc;
+    background-color: #fbf4e2;
+    border-radius: 20px;
+    margin: 90px auto;
+    max-width: 500px;
+}
+
+.panel-login input {
+    border-radius: 10px;
+}
+
+.panel-login > .panel-heading {
+    color: #00415d;
+    background-color: #fbf4e2;
+    border-color: #fff;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+.panel-login > .panel-heading a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.1s linear;
+}
+
+.panel-login > .panel-heading a.active {
+    color: #463C74;
+    font-size: 18px;
+}
+
+.panel-login input[type="text"],
+.panel-login input[type="email"],
+.panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.1s linear;
+}
+
+.panel-login input:hover,
+.panel-login input:focus {
+    outline: none;
+    border-color: #ccc;
+}
+
+.btn-login, .btn-register {
+    background-color: #b4d51e;
+    color: #fff;
+    font-size: 14px;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #463C74;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-login:focus,
+.btn-register:hover,
+.btn-register:focus {
+    background-color: #463C74;
+    border-color: #463C74;
+}
+
+.forgot-password {
+    text-decoration: underline;
+    color: #786ea5;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover,
+.forgot-password:focus {
+    color: #463C74;
+}
+
+
+.footer {
+    background-color: black;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .panel-login {
+        margin: 30px 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    
+    .nav-link {
+        padding: 10px 0;
+    }
+}
+
+
+.herodiv {
+    background-color: #FBF4E2;
+    border-radius: 5%;
+    padding: 50px 0;
+}
+
+.headertext {
+    text-align: left;
+}
+
+.headertext h1 {
+    color: #463C74;
+    font-weight: 700;
+}
+
+
+#popularnow .card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#popularnow .card:hover {
+    transform: translateY(-5px);
+}
+
+.carousel-item {
+    min-height: 200px;
+    background-color: #463C74;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .headertext, .heroimage {
+        text-align: center;
+    }
+    
+    .headertext h1 {
+        font-size: 2rem;
+    }
+    
+    .heroimage img {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+}

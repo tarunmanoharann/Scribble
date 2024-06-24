@@ -1,36 +1,44 @@
-body{
+body {
     font-family: 'Merriweather', serif;
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     background-color: #fbf4e2;
 }
+
 a {
     text-decoration: none;
     color: whitesmoke;
+    transition: color 0.3s ease;
 }
 
+/* Navbar styles */
 .navbar {
     background-color: black;
     margin-bottom: 30px;
     padding: 20px;
     font-size: 18px;
 }
-.navbar a:hover {
-    cursor: pointer;
-    color: red;
-}
+
 .navbar a {
     color: whitesmoke;
     text-decoration: none;
 }
+
+.navbar a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* Button styles */
 .btn {
     font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px 15px;
     background-color: black;
     color: whitesmoke;
+    transition: all 0.3s ease;
 }
+
 .btn:hover,
 .btn:focus {
     color: #fff;
@@ -38,6 +46,8 @@ a {
     border-color: #463C74;
     border-radius: 70px;
 }
+
+/* Card styles */
 .card {
     position: relative;
     display: flex;
@@ -45,7 +55,14 @@ a {
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-body {
@@ -60,8 +77,76 @@ a {
     margin-left: -8px;
 }
 
-
-.footer{
+/* Footer styles */
+.footer {
     background-color: black;
     padding: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* Hero section styles */
+.herodiv {
+    background-color: #FBF4E2;
+    border-radius: 20px;
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.headertext {
+    text-align: left;
+}
+
+.headertext h1 {
+    color: #463C74;
+    font-weight: 700;
+}
+
+/* Popular Now section styles */
+#popularnow {
+    padding: 30px 0;
+}
+
+#popularnow h3 {
+    color: #463C74;
+    margin-bottom: 20px;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 576px) {
+    .headertext, .heroimage {
+        text-align: center;
+    }
+    
+    .headertext h1 {
+        font-size: 2rem;
+    }
+    
+    .heroimage img {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
